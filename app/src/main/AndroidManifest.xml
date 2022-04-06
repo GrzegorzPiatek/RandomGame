@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomGame">
         <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
