@@ -12,7 +12,6 @@ import android.view.WindowInsets
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.randomgame.databinding.ActivityFullscreenBinding
-import com.example.randomgame.ui.login.LoginActivity
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -87,10 +86,13 @@ class FullscreenActivity : AppCompatActivity() {
         fullscreenContentControls = binding.fullscreenContentControls
 
         Handler().postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            println("Inside fullscreen delay")
+            finish();
         }, 3000)
-        finish();
+
+
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away

@@ -3,7 +3,28 @@
     <EditText android:id="@+id/numberInput" android:layout_width="191dp" android:layout_height="43dp" android:layout_marginTop="100dp" android:ems="10" android:hint="Wprowadź liczbę" android:inputType="numberSigned" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.508" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/titleT"/>
     <Button android:id="@+id/shotBtn" android:layout_width="100dp" android:layout_height="44dp" android:layout_marginTop="8dp" android:text="Strzel!" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/numberInput"/>
     <TextView android:id="@+id/scoreTv" android:layout_width="140dp" android:layout_height="18dp" android:layout_marginStart="20dp" android:text="Aktualny wynik:" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.397" app:layout_constraintStart_toEndOf="@+id/shotsTv" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.499"/>
-    <TextView android:id="@+id/shotsTv" android:layout_width="140dp" android:layout_height="18dp" android:text="Oddane strzały:" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.066" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.499"/>
-    <Button android:id="@+id/newGameBtn" android:layout_width="170dp" android:layout_height="42dp" android:layout_marginStart="16dp" android:layout_marginTop="12dp" android:onClick="newGamePressed" android:text="Nowa gra" android:textSize="12sp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/shotsTv"/>
-    <Button android:id="@+id/pointsResetBtn" android:layout_width="170dp" android:layout_height="42dp" android:layout_marginStart="16dp" android:layout_marginTop="12dp" android:onClick="resetPressed" android:text="Resetuj punkty" android:textSize="12sp" app:layout_constraintStart_toEndOf="@+id/newGameBtn" app:layout_constraintTop_toBottomOf="@+id/scoreTv"/>
+
+    <TextView
+        android:id="@+id/shotsTv"
+        android:layout_width="140dp"
+        android:layout_height="18dp"
+        android:text="Oddane strzały:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/newGameBtn"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:onClick="newGamePressed"
+        android:text="Nowa gra"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shotsTv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

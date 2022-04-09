@@ -35,7 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:orientation="horizontal"
-            tools:ignore="UselessParent" />
+            tools:ignore="UselessParent"
+            tools:viewBindingIgnore="true" />
 
         <ImageView
             android:id="@+id/logoView"

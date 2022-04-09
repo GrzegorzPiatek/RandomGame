@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         val scoreTv = findViewById<TextView>(R.id.scoreTv)
         val shotBtn = findViewById<Button>(R.id.shotBtn)
         val newGameBtn = findViewById<Button>(R.id.newGameBtn)
-        val resetPointsBtn = findViewById<Button>(R.id.pointsResetBtn)
 
         fun validateShot(shot: Int): Boolean {
             if (shot > 20 || shot < 0) {
@@ -140,9 +139,7 @@ class MainActivity : AppCompatActivity() {
         newGameBtn.setOnClickListener {
             newGame()
         }
-        resetPointsBtn.setOnClickListener {
-            resetPoints()
-        }
+
 
     }
 }
